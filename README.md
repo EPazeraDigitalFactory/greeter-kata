@@ -12,10 +12,10 @@ From Dave Thomas' [Code Kata site](http://codekata.com/).
 Today we'll be working on a code kata called the Greeter Kata that I have customized for the exercise. The intent of this kata is to give the team an opportunity to get a feel for the Test-Driven Development (TDD) workflow without dealing with the challenges of a large scale codebase that was not written test-first. It will incrementally introduce some common challenges and approaches for dealing with them. 
 
 ## The Greeter Feature
-Upon logging into ACME Online Systems a user will be greeted. The greeting will welcome them and display their work for the day. 
+Upon logging into ACME Online Systems a user will be greeted. The greeting will provide a personlized welcome message.
 
 ## Acceptance Criteria
-1. Given a name of the current user welcome them to the system via a message.
+1. Given a name of the current user welcome them to the system via a message (with correct name capitalization)
 2. Adjust the message based on the time of day in the current timezone
    * 5am - 12pm - provide a morning message
    * 12pm - 5pm - provide an afternoon message
@@ -23,6 +23,7 @@ Upon logging into ACME Online Systems a user will be greeted. The greeting will 
    * 7pm - 5am - provide a night message
 3. Display a birthday message on the user's birthday - Append to the greeting _"have a great birthday!"_
 4. Display the user's age in the birthday message
+5. Display a random quote each time the user logs in
 
 ## Instructions
 * For this exercise we are only going to be building a console application so we don't have to introduce presentation code and frameworks.
