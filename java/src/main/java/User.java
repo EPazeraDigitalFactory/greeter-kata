@@ -6,10 +6,10 @@ import java.util.List;
 
 @Getter
 public class User {
-    private String firstName;
-    private String lastName;
-    private LocalDate birthdate;
-    private List<WorkItem> workItems;
+    private final String firstName;
+    private final String lastName;
+    private final LocalDate birthdate;
+    private final List<WorkItem> workItems;
 
     public User(String firstName, String lastName, LocalDate birthdate) {
         this.firstName = firstName;

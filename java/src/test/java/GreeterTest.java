@@ -10,7 +10,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 public class GreeterTest {
 
     @Mock
-     private TimeProvider timeProviderMock;
+     private TimeProvider timeProvider;
 
     @BeforeEach
     public void init() {
