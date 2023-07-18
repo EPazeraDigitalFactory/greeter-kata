@@ -31,8 +31,8 @@ Upon logging into ACME Online Systems a user will be greeted. The greeting will 
 * Install [Mobster](http://mobster.cc/) to manage drivers in the session
 
 ## The Three Rules of TDD
-1. **ALWAYS** start in the test 
-1. Just enough test code to fail
-1. Just enough production code to pass
+1. Just enough test code to fail (go red)
+1. Just enough production code to pass (go green)
+1. Only refactor when green
 
 _**Now Repeat**_
