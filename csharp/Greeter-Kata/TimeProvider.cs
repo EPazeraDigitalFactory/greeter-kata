@@ -11,5 +11,20 @@
     }
     public DateTime Now => _theTime;
 
-    public string DayPartName => throw new NotImplementedException();
+    public string DayPartName
+    {
+        get
+        {
+            var hour = _theTime.Hour;
+            if(hour<12)
+            {
+                return "Morning";
+            }
+            else if(hour>=12 && hour<17)
+            {
+                return "Afternoon";
+            }
+            return "Evening";
+        }
+    }
 }
