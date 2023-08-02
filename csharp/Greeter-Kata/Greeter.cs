@@ -2,6 +2,6 @@ public class Greeter : IGreeter
 {
     public string Greet(User user)
     {
-        return "Good Morning, Hugh Jass!";
+        return $"Good Morning, {user.FirstName} {user.LastName}!";
     }
 }

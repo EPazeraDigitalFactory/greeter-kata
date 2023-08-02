@@ -4,7 +4,7 @@ public class Greeter_Greet_should
 {
     [Theory]
     [InlineData("Hugh","Jass")]
-//    [InlineData("Mike","Rotch")]
+    [InlineData("Mike","Rotch")]
     public void greet_user_by_name(string firstName, string lastName)
     {
 
