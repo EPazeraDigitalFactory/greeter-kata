@@ -13,9 +13,10 @@ public class Greeter : IGreeter
         {
             return $"Good Morning, {user.FirstName} {user.LastName}!";
         }
-        else
+        else if(hour>=12 && hour<17)
         {
             return $"Good Afternoon, {user.FirstName} {user.LastName}!";
         }
+        return $"Good Evening, {user.FirstName} {user.LastName}!";
     }
 }

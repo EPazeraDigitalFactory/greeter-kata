@@ -21,4 +21,13 @@ public class Greeter_Greet_should
         var givenUser = new User("Hugh","Jass",new DateTime(1970,1,1));
         subject.Greet(givenUser).ShouldBe($"Good Afternoon, Hugh Jass!");
     }
+
+    [Fact]
+    public void say_good_evening_when_it_is_evening()
+    {
+        var timeProvider = new FakeTimeProvider(new DateTime(2020,3,12,18,0,0));
+        IGreeter subject = new Greeter(timeProvider);
+        var givenUser = new User("Hugh","Jass",new DateTime(1970,1,1));
+        subject.Greet(givenUser).ShouldBe($"Good Evening, Hugh Jass!");
+    }
 }
