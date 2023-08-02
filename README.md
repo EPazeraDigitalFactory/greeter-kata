@@ -9,7 +9,7 @@ Code Kata is an attempt to bring this element of practice to software developmen
 From Dave Thomas' [Code Kata site](http://codekata.com/).
 
 ## The Exercise
-Today we'll be working on a code kata called the Greeter Kata that I have customized for the exercise. The intent of this kata is to give the team an opportunity to get a feel for the Test-Driven Development (TDD) workflow without dealing with the challenges of a large scale codebase that was not written test-first. It will incrementally introduce some common challenges and approaches for dealing with them. 
+Today we'll be working on a code kata called the Greeter Kata that has been customized for the exercise. The intent of this kata is to give the team an opportunity to get a feel for the Test-Driven Development (TDD) workflow without dealing with the challenges of a large scale codebase that was not written test-first. It will incrementally introduce some common challenges and approaches for dealing with them. 
 
 ## The Greeter Feature
 Upon logging into ACME Online Systems a user will be greeted. The greeting will provide a personlized welcome message.
@@ -26,9 +26,9 @@ Upon logging into ACME Online Systems a user will be greeted. The greeting will 
 5. Display a random quote each time the user logs in
 
 ## Instructions
-* For this exercise we are only going to be building a console application so we don't have to introduce presentation code and frameworks.
-* There are some classes already defined to help get you started (User & TimeProvider)
-* Install [Mobster](http://mobster.cc/) to manage drivers in the session
+The boilerplate and first failing test are present.
+The interface IGreeter and the class Greeter provide the functionality for the greeting.
+The first failing test has been written, and is RED.
 
 ## The Three Rules of TDD
 1. Just enough test code to fail (go red)
