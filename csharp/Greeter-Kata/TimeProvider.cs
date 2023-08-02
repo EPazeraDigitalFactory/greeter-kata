@@ -16,7 +16,7 @@
         get
         {
             var hour = _theTime.Hour;
-            if(hour<12)
+            if(hour>=5 && hour<12)
             {
                 return "Morning";
             }
