@@ -24,7 +24,11 @@
             {
                 return "Afternoon";
             }
-            return "Evening";
+            else if(hour>=17 && hour<19)
+            {
+                return "Evening";
+            }
+            return "Night";
         }
     }
 }
