@@ -10,25 +10,43 @@
         _theTime=theTime;
     }
     public DateTime Now => _theTime;
+    const string Morning="Morning";
+    const string Afternoon="Afternoon";
+    const string Evening="Evening";
+    const string Night="Night";
+    static readonly IReadOnlyList<string> DatePartNames = new List<string>
+    {
+        Night,
+        Night,
+        Night,
+        Night,
+        Night,
+        Morning,
+        Morning,
+        Morning,
+        Morning,
+        Morning,
+        Morning,
+        Morning,
+        Afternoon,
+        Afternoon,
+        Afternoon,
+        Afternoon,
+        Afternoon,
+        Evening,
+        Evening,
+        Night,
+        Night,
+        Night,
+        Night,
+        Night
+    };
 
     public string DayPartName
     {
         get
         {
-            var hour = _theTime.Hour;
-            if(hour>=5 && hour<12)
-            {
-                return "Morning";
-            }
-            else if(hour>=12 && hour<17)
-            {
-                return "Afternoon";
-            }
-            else if(hour>=17 && hour<19)
-            {
-                return "Evening";
-            }
-            return "Night";
+            return DatePartNames[_theTime.Hour];
         }
     }
 }
